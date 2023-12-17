@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    padding:30px;
+    overflow: hidden;
+    background-color: #141617;
+    user-select: none;
+}
+
+.container{
+    position: absolute;
+    min-height: calc(100vh - 180px);
+    min-width: calc(100vw - 350px);
+    background-color: rgb(18, 19, 19);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+
+.container .left{
+    flex: 1 1 0;
+    background: linear-gradient(230deg in oklab,#141617,#141617a5,#84213a),linear-gradient(330deg,#84213a,#141617);
+    border: transparent;
+}
+
+.container .right{
+    flex: 1 1 0;
+    background-color: #1e1e1e;
+    border: 0.1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.text{
+    padding: 60px;
+    padding-top: 40px;
+}
+
+.text h3{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.571);
+}
+
+.text .content{
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+.text .content h1{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+h1 span{
+    font-size: 40px;
+    color: #ff3465;
+}
+
+.content p{
+    padding-top: 20px;
+    padding-right: 160px;
+    font-size: 18px;
+    color: #7f787a;
+}
+
+.content p span{
+    color: #ffffff;
+}
+
+.content .buttons{
+    padding-top: 40px;
+}
+
+.content .buttons a{
+    color:white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.content .buttons a:first-child{
+    background-color: #ff3465;
+    padding:15px 20px;
+    border-radius: 10px;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.image .cycle{
+    position: absolute;
+    flex: 1 1 0;
+}
+
+.image .cycle img{
+    mix-blend-mode: multiply;
+    transform: translate(-240px);
+}
+
+.image .icons{
+    position: absolute;
+    flex: 1 1 0;
+    display: flex;
+    padding-left: 450px;
+    padding-top: 150px;
+}
+
+.image .icons img{
+    max-height:60px;
+    max-width:150px;
+    padding: 10px;
+    mix-blend-mode:multiply;
+}
+
+.right nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.right nav a{
+    text-decoration: none;
+    padding-right: 50px;
+    padding-top: 40px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.right img:first-of-type{
+    transform: rotate3d(0,1,0,180deg) translateX(250px);
+    position: absolute;
+    top: 10%;
+    width: 40rem;
+    mix-blend-mode: multiply;
+}
+
+.right .rating-box{
+    min-height:65px;
+    min-width:150px;
+    background-color: #8e2941;
+    position: relative;
+    float: right;
+    top:7rem;
+    margin-right: 70px;
+    padding-left: 18px;
+    border-radius: 5px;
+}
+
+.right .rating-box .stars{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    padding-bottom:6px;
+    padding-right: 10px;
+}
+
+.right .rating-box p{
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.specs{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    top:80%;
+    left:10%;
+}
+
+.specs > div{
+    margin-right: 50px;
+}
+
+.specs > div:has(h1,p){
+    color: white;
+}
+
+.specs > div > p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
