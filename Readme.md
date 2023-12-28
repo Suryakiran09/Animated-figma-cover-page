@@ -1,1 +1,1 @@
-This is a animated cover page made from a figma cover page using html, css, tweenmax
+This is a animated front page made from a figma cover page using html, css, tweenmax
